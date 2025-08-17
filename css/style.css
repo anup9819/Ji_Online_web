@@ -23,14 +23,16 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 20px 50px;
-  background: rgba(0,0,0,0.8);
-  color: white;
+  background: rgba(255,255,255,0.95);
+  color: #000;
   z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 .navbar .logo {
   font-size: 24px;
   font-weight: bold;
+  color: #000;
 }
 
 .nav-links {
@@ -43,13 +45,21 @@ body {
 }
 
 .nav-links a {
-  color: white;
+  color: #000;
   text-decoration: none;
   transition: color 0.3s;
 }
 
 .nav-links a:hover {
   color: #ff6b6b;
+}
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #000;
 }
 
 /* Home Section */
@@ -204,3 +214,40 @@ body {
   color: #777;
 }
 
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    right: -100%;
+    background: #fff;
+    width: 200px;
+    height: auto;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    transition: 0.3s;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  }
+
+  .nav-links.active {
+    right: 0;
+  }
+
+  .nav-links li {
+    margin: 15px 0;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .section-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .section-image {
+    margin-top: 20px;
+  }
+}

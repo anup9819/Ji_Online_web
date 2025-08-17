@@ -3,27 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Harshita</title>
+  <title>Ji Online</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
   <!-- Navbar -->
   <nav class="navbar">
-    <div class="logo">Harshita</div>
-    <ul class="nav-links">
+    <div class="logo">Ji Online</div>
+    <ul class="nav-links" id="nav-links">
       <li><a href="#home">Home</a></li>
-      <li><a href="#about">About Us</a></li>
-      <li><a href="#services">What We Do</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
+    <div class="hamburger" id="hamburger">
+      &#9776;
+    </div>
   </nav>
 
   <!-- Home Section -->
   <section id="home" class="home">
     <div class="overlay"></div>
     <div class="home-content">
-      <h1>Harshita</h1>
-      <p>Can't Change, Won't Change</p>
+      <h1>Welcome to Ji Online</h1>
+      <p>Your trusted partner in digital solutions</p>
       <a href="#about" class="btn">Learn More</a>
     </div>
   </section>
@@ -33,7 +37,11 @@
     <div class="section-container">
       <div class="section-text">
         <h2>About Us</h2>
-        <p>We are Harshita, inspired by the beauty of Uttarakhand. Our journey is rooted in tradition and driven by creativity.</p>
+        <p>
+          We are dedicated to delivering top-quality services to help your business grow. 
+          With expertise in web design, development, and digital marketing, Ji Online 
+          is your go-to partner for all things digital.
+        </p>
       </div>
       <div class="section-image">
         <img src="images/about.jpg" alt="About Us">
@@ -44,12 +52,15 @@
   <!-- Services Section -->
   <section id="services">
     <div class="section-container">
-      <div class="section-text">
-        <h2>What We Do</h2>
-        <p>We blend innovation with dedication, offering unique solutions inspired by nature and culture.</p>
-      </div>
       <div class="section-image">
-        <img src="images/services.jpg" alt="What We Do">
+        <img src="images/services.jpg" alt="Services">
+      </div>
+      <div class="section-text">
+        <h2>Our Services</h2>
+        <p>
+          We provide web development, UI/UX design, SEO optimization, and custom digital solutions 
+          tailored to your needs. Let us help your brand shine online.
+        </p>
       </div>
     </div>
   </section>
@@ -58,8 +69,10 @@
   <section id="contact">
     <div class="section-container">
       <div class="section-text">
-        <h2>Contact</h2>
-        <p>Get in touch with us today for collaborations and opportunities.</p>
+        <h2>Contact Us</h2>
+        <p>Email: info@jionline.com</p>
+        <p>Phone: +91 98765 43210</p>
+        <p>Location: Dehradun, Uttarakhand, India</p>
       </div>
       <div class="section-image">
         <img src="images/contact.jpg" alt="Contact">
@@ -71,36 +84,30 @@
   <footer class="footer">
     <div class="footer-container">
       <div class="footer-logo">
-        <h2>Harshita</h2>
-        <p>Empowering Innovation</p>
+        <h2>Ji Online</h2>
+        <p>Your trusted digital solutions partner.</p>
       </div>
-
-      <div class="footer-section">
-        <h3>Address</h3>
-        <p>123 Business Street</p>
-        <p>Dehradun, Uttarakhand</p>
-        <p>India</p>
-      </div>
-
       <div class="footer-section">
         <h3>Contact</h3>
-        <p>+91-9876543210</p>
-        <p><a href="mailto:info@harshita.com">info@harshita.com</a></p>
-      </div>
-
-      <div class="footer-section">
-        <h3>Commercial</h3>
-        <p>Company ID: 3025178</p>
-        <p>GST: 07ABCDE1234F1Z5</p>
-        <p><a href="#">Legal</a></p>
+        <p>Email: info@jionline.com</p>
+        <p>Phone: +91 98765 43210</p>
+        <p>Location: Dehradun, Uttarakhand, India</p>
       </div>
     </div>
-
     <div class="footer-bottom">
-      <p>&copy; 2025 Harshita. All rights reserved.</p>
+      <p>© 2025 Ji Online | All Rights Reserved</p>
     </div>
   </footer>
 
+  <!-- JavaScript for hamburger menu -->
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
 
 </body>
 </html>
